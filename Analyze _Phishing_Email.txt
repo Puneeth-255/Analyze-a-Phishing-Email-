@@ -1,0 +1,39 @@
+ Analyze a Phishing Email 
+
+##  Objective :Identify phishing characteristics in a suspicious email sample
+
+##  Sample Email Summary
+
+> Subject: “Verify your number to process your refund”
+> From: ` irctc-helpdesk@securesupportcloud[.]com`  
+> To: `<myemail@example.com>`
+> Link: `http://payment-irctrc.com/pay`
+
+## Phishing Indicators Found
+
+---Indicator                      
+-->Spoofed Email Address :
+                       "irctc-helpdesk@securesupportcloud[.]com" instead of "irctc.com"
+-->Urgent Language :
+                       "A refund of ₹xxxx is now pending. This link will expire in 2 business days." 
+-->Suspicious URL: 
+                      "Hovering revealed fake payment page" 
+-->Grammatical Errors:
+                      "cradit the amount back to your IRCTC-linked account" 
+-->Greeting:
+                   “no content”-- no name 
+-->Misleading Links:
+                   "Displayed URL masked real phishing domain" 
+
+##  Key Learnings
+
+- Always verify email headers and sender domains.
+- Phishing relies heavily on "fear tactics and urgency".
+- Attackers use "Fake links ".
+- "Header analyzers" reveal inconsistencies in email routing.
+
+
+## Outcome
+- Developed awareness of common phishing techniques
+- Learned to analyze email headers and link spoofing
+- Practiced safe email behavior to reduce security risks

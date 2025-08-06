@@ -1,0 +1,37 @@
+
+Email Header Analysis Report
+
+Objective: Identify phishing characteristics in a suspicious email sample
+
+Authentication Summary:
+
+- DMARC: ✅ Compliant
+  (Domain policy is properly enforced, helps in preventing spoofing.)
+- SPF Alignment: ❌ Failed
+  (Sender used unauthorized mail server.)
+- SPF Authenticated:❌ Failed
+- DKIM Alignment: ✅ Passed
+- DKIM Authenticated: ❌ Failed
+  (The message's DKIM signature could not be verified. This might indicate tampering or a misconfiguration.)
+
+Relay & Server Path:
+
+Received Delay: 1.06 second (Normal)
+
+Mail Hops:
+
+1. From: NzE3NzNyMk | Server: geopid-ismtpd-28 | Status: OK
+2. From: Unknown     | Server: recvd-586fc64576-dz729 | Status: OK
+3. From: o1.ptr2949.theforage.com (IP: 192.73.455.34) | Status: ⚠️ Blacklisted
+4. To: mx.google.com via 2002:a05:7208:4047:b0:a2:afec:4997 | Status: OK
+
+Observations:
+
+- DKIM failure indicates potential message tampering or configuration error.
+- One server in the path (192.73.455.34) is on a blacklist — this raises a red flag.
+- SPF and DMARC are both failed.
+- outcome - the email is partially suspicious and should be treated with caution.
+
+Conclusion:
+
+the SPF, DKIM failure and presence of a blacklisted server IP make this email ""potentially suspicious" .
